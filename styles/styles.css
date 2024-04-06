@@ -1,0 +1,562 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Grechen+Fuemen&family=Ruthie&family=Salsa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #e5e5f7;
+  background-image: url(data:image/jpeg;base64,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);
+  background-size: 13px 13px;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+
+
+nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 0.2rem 1rem;
+}
+
+.navbar-scrolled {
+  background-color: #00000037;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Grechen Fuemen", cursive;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  padding: 0 0.2rem;
+}
+
+.navbar ul li a:hover {
+  opacity: 0.6;
+  color: rgb(206, 181, 16);
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: #fff;
+  opacity: 0.6;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.external-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.external-links a:hover {
+  filter: invert(0.5);
+  transition: all 0.2s ease-in-out;
+  
+}
+
+#shop-heading {
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+#shop-heading:hover {
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  color: rgb(206, 181, 16)
+
+}
+
+#shop-heading::after {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: #fff;
+  opacity: 0.6;
+}
+
+#shop-heading:hover::after {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.landing::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.landing :not(:first-child) {
+  z-index: 2;
+}
+
+#landing-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#landing-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  z-index: 0;
+  transition: all 0.3s ease-in;
+}
+
+#background-indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  z-index: 3;
+}
+
+.background-indicator {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.background-indicator:hover {
+  opacity: 0.8;
+  transition: all 5s ease-in-out;
+}
+
+.background-indicator.active {
+  opacity: 1;
+  background-color: #bb9356;
+  transition: all 0.3s ease-in-out;
+  scale: 1.5;
+}
+
+.landing h3,
+#product h3 {
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 1.6rem;
+  color: #bb9356;
+  font-weight: 500;
+  text-align: center;
+}
+
+.landing h1,
+#product h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  color: #dfdfdf;
+  font-weight: 500;
+  text-align: center;
+}
+
+.landing p {
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 1.2rem;
+  color: #bfbdbd;
+  font-weight: 700;
+  text-align: center;
+  max-width: 60vw;
+  margin-bottom: 1rem;
+}
+
+.carousel-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  width: 98%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-buttons button {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel-buttons button:hover {
+  color: #bb9356;
+  transition: all 0.1s ease-in-out;
+}
+
+#product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 0;
+  min-height: 100vh;
+}
+
+#product h1 {
+  color: #000000;
+}
+
+.product-items-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  border: 10px solid white;
+}
+
+.product-items-container img.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 90%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+.product-items-container * {
+  cursor: pointer;
+}
+
+.product-item-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  position: relative;
+  height: 250px;
+  width: 300px;
+}
+
+.product-item-info h2 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+}
+
+.product-item-info::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  height: calc(100% - 1rem);
+  width: calc(100% - 1rem);
+}
+
+.product-item-image {
+  position: relative;
+  height: 250px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.product-item-image .icon,
+.product-item-image .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.product-item-image .icon {
+  color: #000000;
+  z-index: 5;
+  height: 0;
+  width: 0;
+}
+
+.product-item-image .overlay {
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  transition: all 0.3s ease-in-out;
+  z-index: 4;
+  border-radius: 50%;
+}
+
+.product-item-image .active {
+  width: 200%;
+  height: 200%;
+}
+
+.product-item-image .icon.active {
+  transition: all 0.3s ease-in-out;
+  height: 2rem;
+  width: 2rem;
+}
+
+.product-item-detailed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 10;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 0;
+  width: 80vmin;
+  max-width: 400px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.product-item-detailed .bottom-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: #dfdfdf;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bottom-content {
+  overflow: visible;
+}
+
+.bottom-content .headings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: -60%;
+  z-index: 20;
+}
+
+.product-item-detailed * {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  scale: 0.5;
+}
+
+.product-item-detailed.active {
+  height: 70vh;
+  opacity: 1;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.product-item-detailed.active * {
+  opacity: 1;
+  scale: 1;
+}
+
+.product-item-detailed button.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #dfdfdf;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.product-item-detailed::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.product-item-detailed button.close:hover {
+  color: #bb9356;
+  transition: all 0.1s ease-in-out;
+}
+
+.product-item-detailed-overlay {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-item-detailed-overlay.active {
+  height: 200vmax;
+  width: 200vmax;
+}
+
+.bottom-content h2 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.bottom-content p {
+  font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+  font-family: "Salsa", cursive;
+  font-weight: 200;
+}
+footer span a:hover{
+  color: #00000058;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+}
+
+footer img:hover {
+  opacity: 0.5;
+  transition: all 0.2s ease-in-out;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.scrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0.3rem;
+  height: 0;
+  background-color: rgb(206, 181, 16);
+  opacity: 0.6;
+  transition: all 0.1s linear;
+  z-index: 100;
+}
+

@@ -1,0 +1,82 @@
+[
+  {
+    "_id": "1",
+    "name": "Formal Shirt",
+    "price": 399,
+    "images": [
+      "/assets/product-images/formal-shirt-1.jpg",
+      "/assets/product-images/formal-shirt-2.jpg"
+    ],
+    "description":"Elevate your style with our collection of sophisticated men's formal shirts, crafted for impeccable professionalism."
+  },
+  {
+    "_id": "2",
+    "name": "Formal Pant",
+    "price": 450,
+    "images": [
+      "/assets/product-images/formal-pant-1.jpg",
+      "/assets/product-images/formal-pant-2.jpg"
+    ],
+    "description": "Step up your formal attire game with our meticulously tailored men's formal pants, designed for timeless elegance."
+  },
+  {
+    "_id": "3",
+    "name": "Casual Shirt",
+    "price": 350,
+    "images": [
+      "/assets/product-images/casual-shirt-1.jpg",
+      "/assets/product-images/casual-shirt-2.jpg"
+    ],
+    "description": "Embrace effortless style with our range of casual shirts for men, perfect for relaxed yet refined looks."
+  },
+  {
+    "_id": "4",
+    "name": "Mens Jeans",
+    "price": 999,
+    "images": [
+      "/assets/product-images/jeans-2.jpg",
+      "/assets/product-images/jeans-1.jpg"
+    ],
+    "description": "Elevate your everyday wardrobe with our selection of men's jeans, designed for comfort, durability, and effortless style."
+  },
+  {
+    "_id": "5",
+    "name": "Denim Jacket",
+    "price": 1099,
+    "images": [
+      "/assets/product-images/jacket-1.jpg",
+      "/assets/product-images/jacket-2.jpg"
+    ],
+    "description": "Make a statement with our men's denim jackets, blending rugged durability with timeless style for any occasion."
+  },
+  {
+    "_id": "6",
+    "name": "Sweatshirt",
+    "price": 599,
+    "images": [
+      "/assets/product-images/sweatshirt-1.jpg",
+      "/assets/product-images/sweatshirt-2.jpg"
+    ],
+    "description": "Stay cozy and stylish with our collection of men's sweatshirts, perfect for casual comfort and versatile layering."
+  },
+  {
+    "_id": "7",
+    "name": "T-Shirt",
+    "price": 299,
+    "images": [
+      "/assets/product-images/tshirt-1.jpg",
+      "/assets/product-images/tshirt-2.png"
+    ],
+    "description": "Elevate your casual look with our range of men's t-shirts, offering comfort and style for everyday wear."
+  },
+  {
+    "_id": "8",
+    "name": "Trouser",
+    "price": 499,
+    "images": [
+      "/assets/product-images/trouser-1.jpg",
+      "/assets/product-images/trouser-2.jpg"
+    ],
+    "description": "Upgrade your casual wardrobe with our men's trousers, blending comfort and style for effortless everyday wear."
+  }
+]

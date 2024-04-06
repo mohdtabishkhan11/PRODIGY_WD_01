@@ -1,0 +1,66 @@
+@media (min-width: 600px) {
+  nav.navbar {
+    padding: 0.2rem 2rem;
+  }
+  .navbar ul {
+    font-size: 1.4rem;
+  }
+  #shop-heading {
+    font-size: 2.4rem;
+  }
+  .landing h3,
+  #product h3 {
+    font-size: 2rem;
+  }
+  .landing h1,
+  #product h1 {
+    font-size: 2.6rem;
+  }
+
+  .landing p {
+    font-size: 1.6rem;
+  }
+  .product-items-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-content .headings {
+    top: -80%;
+  }
+  .product-item-detailed.active {
+    max-height: 600px;
+  }
+  .bottom-content p {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (min-width: 900px) {
+  nav.navbar {
+    padding: 0.2rem 6rem;
+  }
+  .landing h1,
+  #product h1 {
+    font-size: 3.4rem;
+  }
+  .landing p {
+    font-size: 2rem;
+  }
+  .product-item-image {
+    height: 300px;
+  }
+  .product-item-info {
+    height: 300px;
+  }
+}
+
+
+@media (min-width: 1300px) {
+  nav.navbar {
+    padding: 0.5rem 12rem;
+  }
+  .product-items-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
