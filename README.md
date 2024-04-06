@@ -2,7 +2,7 @@
 
 This project was given by [Prodigy Infotech](https://prodigyinfotech.dev/) as Task 1.
 
-See [Demo](https://prodigy-wd-1.netlify.app/)
+See [Demo](https://divine-the-future-style.netlify.app/)
 
 ## Description
 
